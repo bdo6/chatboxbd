@@ -1,0 +1,168 @@
+*{
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  background: #67B26F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header{
+  background:rgba(255,255,255,0.2);
+  border-bottom:1px solid white;
+  height: 2.5rem;
+  display:flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size:1.2rem;
+  color:white;
+  font-weight: bold;
+}
+.logo{
+  height:1.8rem;
+  width:1.8rem;
+  margin-right:10px;
+  background: url(./img/parrot.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
+.messages{
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1;
+  overflow: auto;
+}
+.message-row{
+  width:100%;
+  display: flex;
+}
+.message{
+  background:black;
+  color:white;
+  border-radius:10px;
+  margin:7px;
+  display: inline-block;
+  padding: 4px 12px;
+  position: relative;
+}
+.message-name{
+  position: absolute;
+  top: -10px;
+  left: 7px;
+  font-size: 0.55rem;
+  color:black;
+  font-weight: bold;
+}
+
+.text-input{
+  background:rgba(255,255,255,0.2);
+  border-top:1px solid white;
+  height: 2.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button{
+  position:absolute;
+  right:0.65rem;
+  top:0.5rem;
+  border-radius:100%;
+  border:1px solid white;
+  background:white;
+  color:black;
+  cursor: pointer;
+  outline:none;
+  height:1.4rem;
+  width:1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.send-button[disabled]{
+  background:grey;
+  cursor: default;
+}
+.send-button > svg {
+  color: black;
+}
+.send-button[disabled] > svg {
+  color: white;
+}
+
+.input{
+  height:1.65rem;
+  width: calc(100% - 1rem);
+  background:rgba(0, 0, 0, 0.5);
+  border-radius: 0.8rem;
+  outline:none;
+  border:1px solid white;
+  color:white;
+  padding-left:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inputx{
+  border:1px solid white;
+  border-radius:1.6rem;
+  height:1.6rem;
+  width:calc(100% - 20px);
+  background: rgba(0,0,0,0.85);
+  color:white;
+  padding:0 10px;
+  outline:none;
+}
+.send-buttonx{
+  position:absolute;
+  right:12px;
+  top:0.55rem;
+  border-radius:100%;
+  background:white;
+  color:black;
+  border:none;
+  height: 1.4rem;
+  width: 1.4rem;
+  cursor: pointer;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  outline:none;
+}
+.send-buttonx[disabled]{
+  cursor: default;
+  background:grey;
+}
+
+.name-picker{
+  display:flex;
+  margin:0 12px;
+}
+.name-picker input {
+  max-width:100px;
+}
