@@ -44,14 +44,16 @@ db.delete = function(id) {
 
 export { db, useDB }
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyCxnHdHGicbw16DmQfEbNVy7XD6ENprVNQ",
-    authDomain: "chatter2021-2b8fb.firebaseapp.com",
-    projectId: "chatter2021-2b8fb",
-    storageBucket: "chatter2021-2b8fb.appspot.com",
-    messagingSenderId: "778098356347",
-    appId: "1:778098356347:web:c396b31d7a0a5c0c6c32de"
-};
-
+    apiKey: "AIzaSyCwGpAWR0lWdUql11qb2OQstyA_7u3xWsw",
+    authDomain: "chatbd-94166.firebaseapp.com",
+    projectId: "chatbd-94166",
+    storageBucket: "chatbd-94166.appspot.com",
+    messagingSenderId: "133102418355",
+    appId: "1:133102418355:web:dc5ee8478f6a5818b5b3c6",
+    measurementId: "G-ZEEDDL21Y1"
+  };
+  
 firebase.initializeApp(firebaseConfig)
 store = firebase.firestore()
